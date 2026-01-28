@@ -1,6 +1,6 @@
 body{
 height: 100vh;
-width 100vw;
+width: 100vw;
 }
 
 .box-container{
@@ -24,7 +24,9 @@ text-align: left;
 margin-right: 10px;
 }
 
-.box-content:hover:{
+.box-content:hover {
 cursor: grab;
-background-color: #eeff2;
+/* 
+Commented out this line because the Hex code is missing a character.
+background-color: #eeff2; */
 }

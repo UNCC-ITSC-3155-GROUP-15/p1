@@ -1,38 +1,25 @@
 /* General box styling */
-.box {
+.box-content {
   width: 100px;
   height: 100px;
   font-family: Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  border-top : 1px solid #687291;
 }
 
-/* Top line for all boxes */
-.box::before {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #687291;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* Alternating background colors */
-.box:nth-child(odd) {
+.box-content:nth-child(odd) {
   background-color: #dfe1e7;
 }
 
-.box:nth-child(even) {
+.box-content:nth-child(even) {
   background-color: #eeeff2;
 }
 
 /* Final box styling */
-.box:last-child {
+.box-content:last-child {
   background-color: #687291;
   border: 4px solid black;
   display: flex;
@@ -41,12 +28,16 @@
 }
 
 /* Vertical spacing using viewport units */
-.container {
-  position: relative;
-  height: 100vh;
+.box-container {
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-.container .box {
+.box-container .box-content {
   top: calc((100vh / 7) * var(--i));
 }
 
