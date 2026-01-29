@@ -32,3 +32,9 @@ background-color: yellow;
 Commented out this line because the Hex code is missing a character.
 background-color: #eeff2; */
 }
+.box-f{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100px; 
+}
