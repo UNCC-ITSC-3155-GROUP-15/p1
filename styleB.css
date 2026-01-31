@@ -14,19 +14,27 @@ font-size: 40px;
 
 .box-content{
 height: 150px;
+width: 100px;
+background-color: #eeeff2;
 flex-grow: 0;
 flex-shrink: 0;
-flex-basis: 100px;
 border-left-width: 10px;
 border-left-style: dotted;
 border-left-color: #D0D0FF; 
-text-align: left; 
-margin-right: 10px;
+text-align: left;
+text-indent: 10px;
+margin-right: 10px
 }
 
 .box-content:hover {
 cursor: grab;
-/* 
-Commented out this line because the Hex code is missing a character.
-background-color: #eeff2; */
+background-color: yellow;
+color: goldenrod 
+}
+
+.box-content:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
 }
